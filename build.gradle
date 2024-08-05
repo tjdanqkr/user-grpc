@@ -17,7 +17,7 @@ group = 'com.example.grpc'
 publishing {
     repositories {
         maven {
-            name = "GitHubPackages"
+            name = "user-grpc"
             url = "https://maven.pkg.github.com/tjdanqkr/user-grpc"
             credentials {
                 username = System.getenv("MAVEN_USERNAME")
