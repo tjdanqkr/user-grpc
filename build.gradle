@@ -17,17 +17,12 @@ group = 'com.example.grpc'
 publishing {
     repositories {
         maven {
-            name = "user-grpc"
+            name = "GitHubPackages"
             url = "https://maven.pkg.github.com/tjdanqkr/user-grpc"
             credentials {
                 username = System.getenv("MAVEN_USERNAME")
                 password = System.getenv("MAVEN_PASSWORD")
             }
-        }
-    }
-    publications {
-        gpr(MavenPublication) {
-            from(components.java)
         }
     }
 }
