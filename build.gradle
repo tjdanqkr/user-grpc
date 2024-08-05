@@ -25,10 +25,14 @@ publishing {
             }
         }
     }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
 }
 repositories {
     mavenCentral()
-    maven { url "https://jitpack.io" }
 }
 dependencies {
     implementation 'com.github.jitpack:gradle-simple:1.0'
