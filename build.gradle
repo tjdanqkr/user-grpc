@@ -11,8 +11,8 @@ plugins {
     id 'com.google.protobuf' version "${protobufPluginVersion}"
     id 'maven-publish'
 }
-version = '0.0.1'
-group = 'com.example.grpc'
+version = '1.0.0'
+group = 'com.ecommer.grpc'
 
 publishing {
     repositories {
