@@ -25,6 +25,15 @@ publishing {
             }
         }
     }
+    publications {
+        gpr(MavenPublication) {
+            groupId = 'com.ecommer'
+            artifactId = 'grpc'
+            version = '0.1'
+
+            from(components.java)
+        }
+    }
 }
 
 repositories {
