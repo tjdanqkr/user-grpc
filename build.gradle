@@ -27,11 +27,10 @@ publishing {
     }
     publications {
         gpr(MavenPublication) {
-            groupId = 'com.ecommer'
-            artifactId = 'grpc'
-            version = '0.1'
-
-            from(components.java)
+            from components.java
+            groupId = project.group
+            artifactId = project.name
+            version = project.version
         }
     }
 }
