@@ -18,7 +18,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/octocat/hello-world"
+            url = "https://maven.pkg.github.com/tjdanqkr/grpc"
             credentials {
                 username = System.getenv("MAVEN_USERNAME")
                 password = System.getenv("MAVEN_PASSWORD")
