@@ -9,10 +9,23 @@ buildscript {
 plugins {
     id 'java-library'
     id 'com.google.protobuf' version "${protobufPluginVersion}"
+    id 'maven-publish'
 }
 version = '0.0.1'
 group = 'com.example.grpc'
 
+publishing {
+    repositories {
+        maven {
+            name = "OSSRH"
+            url = "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+            credentials {
+                username = System.getenv("MAVEN_USERNAME")
+                password = System.getenv("MAVEN_PASSWORD")
+            }
+        }
+    }
+}
 repositories {
     mavenCentral()
     maven { url "https://jitpack.io" }
